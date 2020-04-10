@@ -6,15 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>我的第一篇文章 | 王超的博客</title>
+  <title>如何搭建自己的博客 | 王超的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
-<meta property="og:title" content="我的第一篇文章">
-<meta property="og:url" content="http://yoursite.com/2020/04/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/index.html">
+  <meta name="description" content="hexo——轻量、简易、高逼格的博客                    原文链接  写blog虽然经历了N多不同时代的产品，恒久不变的始终是自己无人问津的网站。虽然没几个人看，还是隔断时间就要折腾一下。从最开始的wordpress，到tale，到现在的hexo，网站变得越来越简单，越来越轻量级，这里主要说说hexo的使用。 ###hexo介绍主页： https:&#x2F;&#x2F;hexo.io&#x2F;zh-cn">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何搭建自己的博客">
+<meta property="og:url" content="http://yoursite.com/2020/04/10/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="王超的博客">
+<meta property="og:description" content="hexo——轻量、简易、高逼格的博客                    原文链接  写blog虽然经历了N多不同时代的产品，恒久不变的始终是自己无人问津的网站。虽然没几个人看，还是隔断时间就要折腾一下。从最开始的wordpress，到tale，到现在的hexo，网站变得越来越简单，越来越轻量级，这里主要说说hexo的使用。 ###hexo介绍主页： https:&#x2F;&#x2F;hexo.io&#x2F;zh-cn">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-04-10T08:58:28.000Z">
-<meta property="article:modified_time" content="2020-04-10T08:58:28.909Z">
+<meta property="article:modified_time" content="2020-04-10T15:16:29.433Z">
 <meta property="article:author" content="王超">
 <meta name="twitter:card" content="summary">
   
@@ -150,19 +152,19 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-我的第一篇文章" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-如何搭建自己的博客" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
      <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      我的第一篇文章
+      如何搭建自己的博客
     </h1>
   
 
         
-        <a href="/2020/04/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/" class="archive-article-date">
+        <a href="/2020/04/10/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
   	<time datetime="2020-04-10T08:58:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-10</time>
 </a>
         
@@ -178,7 +180,56 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <blockquote>
+<p>hexo——轻量、简易、高逼格的博客              <a href="https://www.jianshu.com/p/1c888a6b8297?utm_source=oschina-app" target="_blank" rel="noopener">      原文链接</a></p>
+</blockquote>
+<p>写blog虽然经历了N多不同时代的产品，恒久不变的始终是自己无人问津的网站。虽然没几个人看，还是隔断时间就要折腾一下。从最开始的wordpress，到tale，到现在的hexo，网站变得越来越简单，越来越轻量级，这里主要说说hexo的使用。</p>
+<p>###hexo介绍<br>主页： <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">https://hexo.io/zh-cn/</a><br>主页中有非常详细的介绍，主页中有介绍内容我这里就不赘述了，这里主要说说主页中没有详细说明内容。</p>
+<p>hexo 可以理解为是基于node.js制作的一个博客工具，不是我们理解的一个开源的博客系统。其中的差别，有点意思。<br>hexo 正常来说，不需要部署到我们的服务器上，我们的服务器上保存的，其实是基于在hexo通过markdown编写的文章，然后hexo帮我们生成静态的html页面，然后，将生成的html上传到我们的服务器。简而言之：hexo是个静态页面生成、上传的工具。<br>| 文件/文件夹     |说明|<br>| :–: | :–:|<br>| _config.yml  | 配置文件 |<br>| public     |   生成的静态文件，这个目录最终会发布到服务器 |<br>| scaffolds   |    一些通用的markdown模板 |<br>| source     |   编写的markdown文件，_drafts草稿文件，_posts发布的文章 |<br>| themes  |    博客的模板 | </p>
+<p>我们正常使用，修改最多的源码是_config.yml文件，不管是博客的基础配置，还是模板，都是修改这个文件。<br>source是我们日常写文章要用的目录，是我们日常操作的文件夹。<br>如果针对下载的模板修改，那么就需要操作themes了。hexo是用node.js编写的程序，所以theme的修改也是比较容易的。</p>
+<p>###搭建hexo博客</p>
+<ul>
+<li>1、安装Nodejs 百度下载，安装（一路next）</li>
+<li>2、安装完成后，windows系统cmd下查看node版本<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure></li>
+<li>3、安装淘宝的cnpm 管理器<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=http://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<ul>
+<li>4、查看cnpm版本<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm -v</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li>5、安装hexo框架<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g hexo-cli</span><br></pre></td></tr></table></figure></li>
+<li>6、查看hexo版本<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure></li>
+<li>7、创建blog目录<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir blog</span><br></pre></td></tr></table></figure>
+<ul>
+<li>8、进入blog目录<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd blog</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li>9、生成博客 初始化博客（windows）<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure></li>
+<li>10、启动本地博客服务<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure></li>
+<li>11、本地访问地址<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://localhost:<span class="number">4000</span>/</span><br></pre></td></tr></table></figure>
+<ul>
+<li>12、创建新的文章<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo n <span class="string">"我的第一篇文章"</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li>13、Github创建一个新的仓库 YourGithubName.github.io</li>
+<li>注意：YourGithubName是你Github的用户名，此处YourGithubName与你的用户名必须一致，</li>
+<li>在blog目录下安装git部署插件<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure></li>
+<li>14、配置_config.yml<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line">deploy:</span><br><span class="line">type: <span class="string">'git'</span></span><br><span class="line">repo: https://github.com/YourGithubName/YourGithubName.github.io.git</span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure></li>
+<li>15、部署到Github仓库里<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure></li>
+<li>16、访问这个地址可以查看你自己的博客<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://YourGithubName.github.io/</span><br></pre></td></tr></table></figure>
+<ul>
+<li>17、下载yilia主题到本地</li>
+<li>这只是其中一个主题，可以自己在网上找喜欢的主题下载使用<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li>18、此时，你的blog目录下的子目录themes下，就生成了一个文件yilia，里面就是刚才下载的主题文件<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://YourGithubName.github.io/</span><br></pre></td></tr></table></figure>
+<ul>
+<li>19、修改hexo根目录下的 _config.yml 文件<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: yilia</span><br></pre></td></tr></table></figure></li>
+<li>20、cmd在blog目录下操作：（YourGithubName是你Github的用户名）<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo c <span class="comment">#清理一下</span></span><br><span class="line">hexo g <span class="comment">#生成</span></span><br><span class="line">hexo d <span class="comment">#部署到远程Github仓库</span></span><br><span class="line">https://YourGithubName.github.io/ <span class="comment">#查看博客</span></span><br></pre></td></tr></table></figure></li>
+<li>21、如果觉着预览不太方便，cmd在blog目录下执行下列代码，系统会实时生成新的HTML，非常方便。<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate -w</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+
       
 
       
@@ -236,7 +287,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/04/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/04/10/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/" alt="微信分享二维码">
     </div>
 </div>
 
